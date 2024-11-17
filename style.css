@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+    body {
+        line-height: 1.6;
+       background-color: white;
+        color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.login-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-form .btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form .btn:hover {
+    background-color: #0056b3;
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-form p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 15px;
+    padding: 3px 5px;
+    margin-left: 80px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 8px 16px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: rgb(133, 3, 255);
+}
+
+.rightNav {
+    width: 30%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    padding: 10px 23px;
+}
+
+.rightNav input[type="text"] {
+    font-size: 17px;
+    padding: 3px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    margin-right: 0.5em;
+}
+
+#search {
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgb(241, 26, 10) url('https://media.istockphoto.com/id/637957146/photo/blood-type-touch-screen-concept.jpg?s=612x612&w=0&k=20&c=eqW9JzYLzv-rsqHgMgnPapyv2P7i0lS1Vs48AkdMGsw=');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-sm {
+
+    padding: 3px 5px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-sm:hover {
+    background-color: rgb(92, 3, 130);
+    color: orange;
+}
+
+.firstSection {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: #e91e6300 url('https://media.istockphoto.com/id/1791891433/photo/blood-cells-close-up.jpg?s=612x612&w=0&k=20&c=n4sCmP2dWdKobmpgvK13NEOCjSLOzgdfwshiioWiFm8=');
+    background-size: cover;
+    background-blend-mode: darken;
+    text-align: center;
+}
+
+.box-main {
+    
+
+    display: flex;
+   
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    color: rgb(19, 13, 13);
+    padding: 10px 30px;
+}
+
+.firsthalf {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px 5px;
+}
+
+.secondhalf {
+    width: 50%;
+    justify-content: right;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 1em;
+}
+
+
+
+.secondhalf img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 4px solid white;
+    border-radius: 50%;
+
+    max-width: 100%;
+   
+}
+
+.text-big {
+    font-size: 50px;
+    font-weight: bold;
+    color: whitesmoke;
+   
+    margin-bottom: 0.5em;
+}
+
+.text-small {
+    font-size: 1.1em;
+    font-weight: 550;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.secondsection {
+
+    height: 100%;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container1 {
+    background-color: #f4f4f4;
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+   padding: 30px;
+    
+    /* margin: 10px; */
+    /* width: 45%; */
+    background-color: #ffcdd2;
+ 
+   
+
+}
+
+
+.container2{
+    
+    margin: auto;
+
+    background-color: #ffcdd2;
+    padding: 2rem;
+    
+
+}
+
+.container1 .firsthalf, .container2 {
+    flex: 1;
+    padding: 1em;
+}
+
+
+
+h1, h2 {
+    color: #e74c3c;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+form label {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+form button {
+    padding: 0.8em 1.5em;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e04e35;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe {
+    width: 600px;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.paras {
+    width: 45%;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.section-left {
+    background-color: #f8bbd0;
+    padding: 2rem 1rem;
+    flex-direction: row-reverse;
+}
+
+.h1{
+    font-size: 2rem;
+    color: #d32f2f;
+}
+
+.p1{
+    color: #333;
+    line-height: 1.8;
+}
+
+.Contact{
+    text-align: center;
+    background-color: #f8bbd0;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+   height: 51vh;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+.form{
+    max-width: 500px;
+    margin:  42px auto;
+}
+
+.form input{
+    margin: 10px 0;
+    padding: 3px 5px;
+    width: 100%;
+    font-size: 15px;
+    border: 3px solid gray;
+    border-radius: 6px;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    background: #8cae0f;
+}   
+
+.image{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    padding: 10px;
+}
+
+
+
+
+/* Media Query for iPhones and other small screens */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .text-big {
+        font-size: 1.8rem;
+    }
+
+    .secondhalf img {
+        max-width: 90%;
+    }
+
+    .secondsection {
+        flex-direction: column;
+    }
+
+    .container1, .container2 {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+
+    .paras {
+        width: 100%;
+        text-align: center;
+    }
+
+    .thumbnail img {
+        max-width: 100%;
+    }
+
+    .section-left {
+        padding: 1rem;
+    }
+
+    .Contact .form input {
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .nav-list li {
+        padding: 6px 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Hide navigation links and rightNav (e.g., search bar) */
+    .nav-list,
+    .rightNav {
+        display: none;
+    }
+
+    /* Center the logo */
+    .logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* Display hamburger icon */
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+        padding: 0.5rem;
+    }
+
+    /* Navbar layout */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
+
+/* Mobile Phones (Small screens) */
+@media (max-width: 480px) {
+    .text-big {
+        font-size: 1.5rem;
+    }
+
+    .firstSection,
+    .section,
+    .container1,
+    .container2 {
+        padding: 1rem;
+    }
+
+    /* Display nav list in vertical layout if toggled */
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+    }
+
+    .section,
+    .paras {
+        text-align: center;
+    }
+
+    /* Adjust button and input sizes */
+    .btn,
+    .login-form input {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust the hamburger icon size for mobile */
+    .hamburger {
+        font-size: 2rem;
+    }
+}
